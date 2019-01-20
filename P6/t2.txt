@@ -1,0 +1,31 @@
+6
+Nationals
+Orioles
+Diamondbacks
+Indians
+Padres
+Cardinals
+Nationals 7 Cardinals 0
+Nationals 2 Cardinals 8
+Nationals 4 Cardinals 2
+Cardinals 8 Diamondbacks 10
+Cardinals 5 Diamondbacks 6
+Cardinals 1 Diamondbacks 0
+Indians 2 Nationals 3
+Diamondbacks 4 Nationals 3
+Nationals 5 Diamondbacks 3
+Nationals 6 Diamondbacks 7
+Padres 7 Diamondbacks 1
+Padres 2 Diamondbacks 2
+Padres 6 Diamondbacks 11
+Cardinals 2 Indians 8
+Cardinals 17 Indians 1
+Cardinals 2 Indians 0
+Orioles 3 Nationals 4
+Orioles 2 Nationals 7
+Orioles 6 Nationals 8
+Indians 2 Orioles 3
+Indians 7 Orioles 2
+Indians 0 Orioles 8
+Padres 32 Indians 17
+DONE 0 DONE 0

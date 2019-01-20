@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=xPos\ yPos\ ballDiameter\ ballColour\ groundPosition
+comment0.target=BouncingBall(int,\ int,\ int,\ java.awt.Color,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ BouncingBall\r\n
+comment1.params=canvas
+comment1.target=void\ draw(java.awt.Canvas)
+comment1.text=\r\n\ Draw\ this\ ball\ at\ its\ current\ position\ onto\ the\ canvas.\r\n
+comment2.params=canvas
+comment2.target=void\ erase(java.awt.Canvas)
+comment2.text=\r\n\ Erase\ this\ ball\ at\ its\ current\ position.\r\n
+comment3.params=canvas
+comment3.target=void\ move(java.awt.Canvas)
+comment3.text=\r\n\ Move\ this\ ball\ according\ to\ its\ position\ and\ speed\ and\ redraw.\r\n
+comment4.params=
+comment4.target=int\ getXPosition()
+comment4.text=\r\n\ return\ the\ horizontal\ position\ of\ this\ ball\r\n
+comment5.params=
+comment5.target=int\ getYPosition()
+comment5.text=\r\n\ return\ the\ vertical\ position\ of\ this\ ball\r\n
+numComments=6

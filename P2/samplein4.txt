@@ -1,0 +1,7 @@
+here is another title
+For the first pargraph it will not be formated.
+n
+The second paragraph will be in italics.
+i
+The last one is going to be bold.
+b

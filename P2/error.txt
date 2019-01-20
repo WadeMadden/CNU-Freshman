@@ -1,0 +1,13 @@
+> java ToHTML
+This program creates html code. You will enter a title and three
+paragraphs.
+For each paragraph, you will enter formatting. Enter b for bold, i for
+italics or n for none.
+Enter the title of your webpage->
+Enter your first paragraph->
+Enter the format for your first paragraph->
+Enter your second paragraph->
+Enter the format for your second paragraph->
+Enter your third paragraph->
+Enter the format for your third paragraph->
+Here is your html file:
