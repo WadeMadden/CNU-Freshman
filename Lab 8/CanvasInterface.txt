@@ -1,0 +1,44 @@
+public Canvas(String title, int width, int height, Color bgColour)
+
+public Canvas(String title)
+
+public Canvas(String title, int width, int height)
+
+public void setVisible(boolean visible)
+
+public boolean isVisible()
+
+public void draw(Shape shape)
+
+public void fill(Shape shape)
+
+public void erase(Shape shape)
+
+public boolean drawImage(Image image, int x, int y)
+
+public void drawString(String text, int x, int y)
+
+public void eraseString(String text, int x, int y)
+
+public void drawLine(int x1, int y1, int x2, int y2)
+
+public void setForegroundColour(Color newColour)
+
+public Color getForegroundColour()
+
+public void setBackgroundColour(Color newColour)
+
+public Color getBackgroundColour()
+
+public void setFont(Font newFont)
+
+public Font getFont()
+
+public void setSize(int width, int height)
+
+public void wait(int milliseconds)
+
+private JFrame display;
+public JPanel canvas;
+private Graphics2D graphic;
+private Color backgroundColour;

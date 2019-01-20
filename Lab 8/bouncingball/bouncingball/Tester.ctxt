@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Tester()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Tester\r\n
+comment1.params=x\ y\ xTravel\ yTravel\ iterations
+comment1.target=void\ testSquare(int,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ test\ method\ for\ testing\ Canvas\ class\r\n\ Moves\ a\ Rectangle\ object\ around\ the\ screen\ in\ a\ rectangular\r\n\ direction.\ \ It\ changes\ colour\ each\ time.\r\n\ \r\n\ @param\ x\ the\ initial\ x\ axis\ position\ of\ the\ shape\r\n\ @param\ y\ the\ initial\ x\ axis\ position\ of\ the\ shape\r\n\ @param\ xTravel\ the\ length\ of\ x\ axis\ travel\r\n\ @param\ yTravel\ the\ length\ of\ x\ axis\ travel\r\n\ @param\ iterations\ the\ number\ of\ cycles\ to\ perform\r\n\ \r\n
+comment2.params=ball\ ball2
+comment2.target=void\ bounce(BouncingBall,\ BouncingBall)
+comment2.text=\r\n\ simulates\ a\ bouncing\ ball\r\n\ \r\n
+numComments=3

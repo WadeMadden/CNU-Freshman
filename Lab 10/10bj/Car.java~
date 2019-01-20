@@ -1,0 +1,167 @@
+import java.util.ArrayList;
+
+public class Car
+{
+	private Person driver;
+	private Person [] passengers;
+	private int chair;
+	
+	public static void main(String [] args)
+	{
+		Car blue = new Car(7);
+		System.out.println(blue.getDriver());
+	}
+	public Car()
+	{
+		passengers = new Person [4];
+	}
+	public Car(int aCapacity)
+	{
+		if(aCapacity<4)
+		{
+			passengers = new  Person [4];
+		}
+		else if(aCapacity>8)
+		{
+			passengers = new  Person [8];
+		}
+		else
+		{
+			passengers = new Person [aCapacity];
+		}
+	}
+	public int getCapacity()
+	{
+		int num = 0;
+		for(int i = 0;i<passengers.length;i++)
+		{
+			num++;
+		}
+		return num;
+	}
+	public int getOccupancy()
+	{
+		int num = 0;
+		for(int i = 0;i<passengers.length;i++)
+		{
+			if(passengers[i]==null)
+			{
+				continue;
+			}
+			else
+			{
+				num++;
+			}
+		}
+		return num;
+	}
+	public boolean hasRoom()
+	{
+		boolean room;
+		if(getOccupancy()==getCapacity())
+		{
+			room = false;
+		}
+		else
+		{
+			room = true;
+		}
+		return room;
+	}
+	public Person getDriver()
+	{
+		if(driver == null)
+		{
+			return null;
+		}
+		return driver;
+	}
+	public boolean setDriver(Person person)
+	{
+		boolean result;
+        if(canDrive(person)==true && hasPassenger(person)==true && hasRoom()==true)
+        {
+            driver=person;
+            result=true;
+        }
+        else
+        {
+            driver=null;
+            result=false;
+        }
+        return result;
+	}
+	public Person[] getPassengers()
+	{
+		Person [] newPassengers = new Person[getCapacity()];
+		for(int i = 0; i<passengers.length;i++)
+		{
+			if(passengers[i]!=null)
+			{
+				newPassengers[i] = passengers[i];
+			}
+		}
+		return newPassengers;
+	}
+	public boolean hasPassenger(Person person)
+	{
+		boolean test = false;
+		if(person!=null)
+		{
+			for(int i = 0;i<passengers.length;i++)
+			{
+				if(passengers[i]==person)
+				{
+					test = true;
+					chair = i;
+				}
+			}
+		}
+		return test;
+	}
+	public boolean addPassenger(Person person)
+	{
+		boolean test = false;
+		if(hasRoom()==true && person!=null && hasPassenger(person)==false)
+		{
+			int j = 0;
+			for(j=0;passengers[j]!=null;j++)
+			{
+				passengers[j] = person;
+				test = true;
+			}
+		}
+		return test;
+	}
+	public boolean removePassenger(Person person)
+	{
+		boolean test;
+		if(hasPassenger(person)==true)
+		{
+			passengers[chair]=null;
+			if(person==driver)
+			{
+				driver = null;
+			}
+			test = true;
+		}
+		else
+		{
+			test = false;
+		}
+		return test;
+	}
+	public boolean canDrive(Person person)
+	{
+		boolean test;
+		if(person!=null)
+		{
+			test=person.canDrive();
+		}
+		else
+		{
+			test = false;
+		}
+		return test;
+	}
+}
